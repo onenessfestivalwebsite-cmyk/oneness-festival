@@ -26,17 +26,17 @@ const AboutPage = () => {
     <div className="about-page">
       {/* Hero Section */}
       <section className="about-hero" style={{ backgroundImage: `url("${bgImage}")` }}>
-        <img src={topMask} alt="Top Torn Edge" className="about-mask-top mask-overlay" />
-        
+        <img src={topMask} alt="Top Torn Edge  " className="about-mask-top mask-overlay" />
+
         <div className="about-hero-content">
           <h1>ABOUT<br />JAIPUR ONENESS<br />FESTIVAL</h1>
           <p className="about-hero-date">00 January - 00 January<br />2026</p>
-          
+
           {/* Floating Flowers */}
           <img src={flowerIcon} alt="flower" className="about-flower about-flower-1" />
           <img src={flowerIcon} alt="flower" className="about-flower about-flower-2" />
         </div>
-        
+
         <img src={bottomMask} alt="Bottom Torn Edge" className="about-mask-bottom mask-overlay" />
       </section>
 
@@ -44,15 +44,15 @@ const AboutPage = () => {
       <section className="about-intro">
         <div className="about-text-wrapper">
           <p>
-            Jaipur Oneness Festival is a cultural and spiritual gathering celebrating oneness and 
-            connection in India. It is a space to reconnect with your own essence, experience 
-            wholeness within yourself, and explore life from your true self. When we live 
-            authentically, others can see us clearly, and we naturally attract people and 
+            Jaipur Oneness Festival is a cultural and spiritual gathering celebrating oneness and
+            connection in India. It is a space to reconnect with your own essence, experience
+            wholeness within yourself, and explore life from your true self. When we live
+            authentically, others can see us clearly, and we naturally attract people and
             circumstances that resonate with our path.
           </p>
           <img src={flowerIcon} alt="flower" className="about-flower about-flower-3" />
           <p className="about-text-second">
-            The festival brings together people who wish to live, move, and relate from their true 
+            The festival brings together people who wish to live, move, and relate from their true
             selves, sharing a sense of unity,<br />
             harmony, and purpose with others.
           </p>
@@ -64,7 +64,7 @@ const AboutPage = () => {
       <section className="about-vision">
         <img src={topMask} alt="Top Torn Edge" className="about-vision-mask-top mask-overlay" />
         <img src={peacockFeather} alt="Peacock feather" className="peacock-feather-about" />
-        
+
         <div className="vision-content">
           <div className="vision-text">
             <h2>OUR VISION</h2>
@@ -74,7 +74,7 @@ const AboutPage = () => {
           </div>
           <div className="vision-frame-wrapper">
             {/* <div className="vision-frame"> */}
-              {/* <img src={aboutVisionImg} alt="Group discussion" /> */}
+            {/* <img src={aboutVisionImg} alt="Group discussion" /> */}
             {/* </div> */}
             <img src={frameImg} alt="" className="vision-frame-border" />
           </div>
@@ -95,10 +95,10 @@ const AboutPage = () => {
           <h2>LIVING IN ALIGNMENT</h2>
           <img src={dividerIcon} alt="Divider" className="section-divider" />
         </div>
-        
+
         <div className="alignment-content">
           <img src={turbanMan} alt="Man" className="alignment-character-left" />
-          
+
           <div className="alignment-boxes">
             <div className="alignment-box">
               Each of us leads our own lives, often focused on our families or personal goals. At the festival, we explore what it means to live, move, and be in alignment with ourselves, each other, and the larger community.
@@ -119,7 +119,7 @@ const AboutPage = () => {
       <section className="about-unity" style={{ backgroundImage: `url("${unityBg}")` }}>
         <div className="unity-content">
           <div className="unity-image">
-             <img src={unityCircleImg} alt="People at Hawa Mahal" />
+            <img src={unityCircleImg} alt="People at Hawa Mahal" />
           </div>
           <div className="unity-text">
             <h2>CARRIED IN UNITY AND WHOLENESS</h2>
@@ -154,7 +154,7 @@ const AboutPage = () => {
               Guided sessions that support self-exploration, inner alignment, and authentic expression.
             </p>
           </div>
-          
+
           <div className="approach-card card-community">
             <h3>COMMUNITY<br />AND<br />CO-CREATION</h3>
             <p>
