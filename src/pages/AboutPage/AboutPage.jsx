@@ -30,7 +30,7 @@ const AboutPage = () => {
 
         <div className="about-hero-content">
           <h1>ABOUT<br />JAIPUR ONENESS<br />FESTIVAL</h1>
-          <p className="about-hero-date">00 January - 00 January<br />2026</p>
+          <p className="about-hero-date   ">00 January - 00 January<br />2026</p>
 
           {/* Floating Flowers */}
           <img src={flowerIcon} alt="flower" className="about-flower about-flower-1" />
