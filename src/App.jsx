@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Home from './pages/Home'
+import AboutPage from './pages/AboutPage/AboutPage'
 import GetInvolved from './pages/GetInvolved'
 import Contact from './pages/Contact'
 import Tour from './pages/Tour'
@@ -29,6 +30,7 @@ function App() {
       <main style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', minHeight: '60vh' }}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/tour" element={<Tour />} />
