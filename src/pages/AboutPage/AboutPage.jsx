@@ -26,7 +26,7 @@ const AboutPage = () => {
     <div className="about-page">
       {/* Hero Section */}
       <section className="about-hero" style={{ backgroundImage: `url("${bgImage}")` }}>
-        <img src={topMask} alt="Top Torn Edge  " className="about-mask-top mask-overlay" />
+        <img src={topMask} alt="Top Torn Edge" className="about-mask-top mask-overlay" />
 
         <div className="about-hero-content">
           <h1>ABOUT<br />JAIPUR ONENESS<br />FESTIVAL</h1>
