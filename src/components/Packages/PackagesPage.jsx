@@ -29,7 +29,7 @@ export default function PackagesPage() {
       <section className="pkg-section" style={{ backgroundImage: `url('${textureBg}')` }}>
         <p className="pkg-year">ONENESS 2026</p>
         <h2 className="pkg-main-title">ONENESS FESTIVAL PACKAGES</h2>
-        
+
         <img src={group5} alt="Decorative Divider" className="pkg-divider-img" />
 
         <p className="pkg-desc">

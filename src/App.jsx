@@ -12,6 +12,7 @@ import ExperiencePage from './components/Experience/ExperiencePage'
 import AchievementPage from './components/Achievement/AchievementPage'
 import ExplorePage from './components/Explore/ExplorePage'
 import PackagesPage from './components/Packages/PackagesPage'
+import TourPackages from './components/TourPackages/TourPackages'
 import UnderDevelopment from './components/UnderDevelopment/UnderDevelopment'
 import TicketsPage from './components/ticket/TicketsPage'
 import Location from './pages/Location'
@@ -39,6 +40,7 @@ function App() {
           <Route path="/achievement" element={<AchievementPage />} />
           <Route path="/explore" element={<ExplorePage />} />
           <Route path="/packages" element={<PackagesPage />} />
+          <Route path="/tour-packages" element={<TourPackages />} />
           <Route path="/team" element={<Team />} />
           <Route path="/teacher" element={<Teacher />} />
           <Route path="/teacher-inner" element={<TeacherInner />} />

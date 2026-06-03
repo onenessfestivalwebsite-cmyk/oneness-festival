@@ -2,6 +2,7 @@
   background-color: #4c3a80;
   /* Matched exactly to the bottom pixel of group 94.png */
   color: #d1d5db;
+  z-index: 99;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
   margin-top: auto;
