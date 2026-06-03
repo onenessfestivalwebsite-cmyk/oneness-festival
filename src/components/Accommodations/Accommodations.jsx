@@ -1,12 +1,21 @@
 import React from 'react';
 import './Accommodations.css';
-import AccommodationRegistration from '../Accommodation/AccommodationRegistration';
 
 // Assets
 import bgImage from '../../assets/accommodationpage/image 48.png';
 import topMask from '../../assets/accommodationpage/Mask group.png';
 import bottomMask from '../../assets/accommodationpage/Mask group (1).png';
-import dividerImg from '../../assets/Group 5.png';
+import dividerImg from '../../assets/accommodationpage/Group 5.png';
+
+// Hotels & Banner Assets
+import clarksBannerImg from '../../assets/accommodationpage/clarks_banner.png';
+import skylineImg from '../../assets/accommodationpage/design.png';
+import domeFrame from '../../assets/accommodationpage/Vector.png';
+import hotel1Img from '../../assets/accommodationpage/clarks_thumb.png';
+import hotel2Img from '../../assets/accommodationpage/image 26.png';
+import hotel3Img from '../../assets/accommodationpage/image 58.png';
+import domeMask from '../../assets/homepage/Mask group (13).png';
+import starburstImg from '../../assets/accommodationpage/Group 173.png';
 
 const FlowerIcon = ({ className }) => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className={`accomm-btn-flower-icon ${className || ''}`}>
@@ -23,19 +32,127 @@ const FlowerIcon = ({ className }) => (
 );
 
 const Accommodations = () => {
-  const handleScrollToForm = () => {
-    const bookingSection = document.getElementById('accommodation-booking');
-    if (bookingSection) {
-      bookingSection.scrollIntoView({ behavior: 'smooth' });
+  const handleScrollToStays = () => {
+    const staysSection = document.getElementById('stay-hotels-list');
+    if (staysSection) {
+      staysSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const hotelData = [
+    {
+      id: 1,
+      name: "Clarks Amer, Jaipur",
+      image: hotel1Img,
+      distance: "10 mins drive (2-3 km)",
+      desc: "Lorem ipsum dolor sit amet, consectetur. Sed imperdiet eget habitant elementum odio pharetra libero. Neque quis in sed risus vitae turpis tincidunt nunc. Tellus aenean tellus ultrices pharetra viverra. Massa ultricies a donec ipsum, sit tempor auctor nulla ipsum erat."
+    },
+    {
+      id: 2,
+      name: "The Lalit",
+      image: hotel2Img,
+      distance: "10 mins drive (2-3 km)",
+      desc: "Lorem ipsum dolor sit amet, consectetur. Sed imperdiet eget habitant elementum odio pharetra libero. Neque quis in sed risus vitae turpis tincidunt nunc. Tellus aenean tellus ultrices pharetra viverra. Massa ultricies a donec ipsum, sit tempor auctor nulla ipsum erat."
+    },
+    {
+      id: 3,
+      name: "Marriott",
+      image: hotel3Img,
+      distance: "10 mins drive (2-3 km)",
+      desc: "Lorem ipsum dolor sit amet, consectetur. Sed imperdiet eget habitant elementum odio pharetra libero. Neque quis in sed risus vitae turpis tincidunt nunc. Tellus aenean tellus ultrices pharetra viverra. Massa ultricies a donec ipsum, sit tempor auctor nulla ipsum erat."
+    },
+    {
+      id: 4,
+      name: "Hotel Name 4",
+      image: hotel1Img,
+      distance: "10 mins drive (2-3 km)",
+      desc: "Lorem ipsum dolor sit amet, consectetur. Sed imperdiet eget habitant elementum odio pharetra libero. Neque quis in sed risus vitae turpis tincidunt nunc. Tellus aenean tellus ultrices pharetra viverra. Massa ultricies a donec ipsum, sit tempor auctor nulla ipsum erat."
+    },
+    {
+      id: 5,
+      name: "Hotel Name 5",
+      image: hotel2Img,
+      distance: "10 mins drive (2-3 km)",
+      desc: "Lorem ipsum dolor sit amet, consectetur. Sed imperdiet eget habitant elementum odio pharetra libero. Neque quis in sed risus vitae turpis tincidunt nunc. Tellus aenean tellus ultrices pharetra viverra. Massa ultricies a donec ipsum, sit tempor auctor nulla ipsum erat."
+    },
+    {
+      id: 6,
+      name: "Hotel Name 6",
+      image: hotel3Img,
+      distance: "10 mins drive (2-3 km)",
+      desc: "Lorem ipsum dolor sit amet, consectetur. Sed imperdiet eget habitant elementum odio pharetra libero. Neque quis in sed risus vitae turpis tincidunt nunc. Tellus aenean tellus ultrices pharetra viverra. Massa ultricies a donec ipsum, sit tempor auctor nulla ipsum erat."
+    },
+    {
+      id: 7,
+      name: "Hotel Name 7",
+      image: hotel1Img,
+      distance: "10 mins drive (2-3 km)",
+      desc: "Lorem ipsum dolor sit amet, consectetur. Sed imperdiet eget habitant elementum odio pharetra libero. Neque quis in sed risus vitae turpis tincidunt nunc. Tellus aenean tellus ultrices pharetra viverra. Massa ultricies a donec ipsum, sit tempor auctor nulla ipsum erat."
+    },
+    {
+      id: 8,
+      name: "Hotel Name 8",
+      image: hotel2Img,
+      distance: "10 mins drive (2-3 km)",
+      desc: "Lorem ipsum dolor sit amet, consectetur. Sed imperdiet eget habitant elementum odio pharetra libero. Neque quis in sed risus vitae turpis tincidunt nunc. Tellus aenean tellus ultrices pharetra viverra. Massa ultricies a donec ipsum, sit tempor auctor nulla ipsum erat."
+    },
+    {
+      id: 9,
+      name: "Hotel Name 9",
+      image: hotel3Img,
+      distance: "10 mins drive (2-3 km)",
+      desc: "Lorem ipsum dolor sit amet, consectetur. Sed imperdiet eget habitant elementum odio pharetra libero. Neque quis in sed risus vitae turpis tincidunt nunc. Tellus aenean tellus ultrices pharetra viverra. Massa ultricies a donec ipsum, sit tempor auctor nulla ipsum erat."
+    },
+    {
+      id: 10,
+      name: "Hotel Name 10",
+      image: hotel1Img,
+      distance: "10 mins drive (2-3 km)",
+      desc: "Lorem ipsum dolor sit amet, consectetur. Sed imperdiet eget habitant elementum odio pharetra libero. Neque quis in sed risus vitae turpis tincidunt nunc. Tellus aenean tellus ultrices pharetra viverra. Massa ultricies a donec ipsum, sit tempor auctor nulla ipsum erat."
+    },
+    {
+      id: 11,
+      name: "Hotel Name 11",
+      image: hotel2Img,
+      distance: "10 mins drive (2-3 km)",
+      desc: "Lorem ipsum dolor sit amet, consectetur. Sed imperdiet eget habitant elementum odio pharetra libero. Neque quis in sed risus vitae turpis tincidunt nunc. Tellus aenean tellus ultrices pharetra viverra. Massa ultricies a donec ipsum, sit tempor auctor nulla ipsum erat."
+    },
+    {
+      id: 12,
+      name: "Hotel Name 12",
+      image: hotel3Img,
+      distance: "10 mins drive (2-3 km)",
+      desc: "Lorem ipsum dolor sit amet, consectetur. Sed imperdiet eget habitant elementum odio pharetra libero. Neque quis in sed risus vitae turpis tincidunt nunc. Tellus aenean tellus ultrices pharetra viverra. Massa ultricies a donec ipsum, sit tempor auctor nulla ipsum erat."
+    },
+    {
+      id: 13,
+      name: "Hotel Name 13",
+      image: hotel1Img,
+      distance: "10 mins drive (2-3 km)",
+      desc: "Lorem ipsum dolor sit amet, consectetur. Sed imperdiet eget habitant elementum odio pharetra libero. Neque quis in sed risus vitae turpis tincidunt nunc. Tellus aenean tellus ultrices pharetra viverra. Massa ultricies a donec ipsum, sit tempor auctor nulla ipsum erat."
+    },
+    {
+      id: 14,
+      name: "Hotel Name 14",
+      image: hotel2Img,
+      distance: "10 mins drive (2-3 km)",
+      desc: "Lorem ipsum dolor sit amet, consectetur. Sed imperdiet eget habitant elementum odio pharetra libero. Neque quis in sed risus vitae turpis tincidunt nunc. Tellus aenean tellus ultrices pharetra viverra. Massa ultricies a donec ipsum, sit tempor auctor nulla ipsum erat."
+    },
+    {
+      id: 15,
+      name: "Hotel Name 15",
+      image: hotel3Img,
+      distance: "10 mins drive (2-3 km)",
+      desc: "Lorem ipsum dolor sit amet, consectetur. Sed imperdiet eget habitant elementum odio pharetra libero. Neque quis in sed risus vitae turpis tincidunt nunc. Tellus aenean tellus ultrices pharetra viverra. Massa ultricies a donec ipsum, sit tempor auctor nulla ipsum erat."
+    }
+  ];
 
   return (
     <div className="accomm-page-wrapper">
       {/* Hero Section */}
       <section className="accomm-hero-section" style={{ backgroundImage: `url("${bgImage}")` }}>
         <div className="accomm-hero-overlay" />
-        
+
         {/* Top Mask */}
         <img src={topMask} alt="" className="accomm-mask-top" />
 
@@ -45,7 +162,7 @@ const Accommodations = () => {
           <h1 className="accomm-hero-title">GET YOUR ACCOMMODATION</h1>
 
           <div className="accomm-btn-wrapper">
-            <button className="accomm-reserve-btn" onClick={handleScrollToForm}>
+            <button className="accomm-reserve-btn" onClick={handleScrollToStays}>
               <div className="accomm-btn-inner">
                 <FlowerIcon className="flower-left-bottom" />
                 <span className="accomm-btn-text">RESERVE YOUR ACCOMMODATION</span>
@@ -64,9 +181,9 @@ const Accommodations = () => {
         <div className="accomm-intro-container">
           <p className="accomm-intro-year">2026</p>
           <h2 className="accomm-intro-title">ACCOMMODATION</h2>
-          
+
           <img src={dividerImg} alt="Teal Divider" className="accomm-intro-divider" />
-          
+
           <p className="accomm-intro-text">
             Jaipur is a city of heritage, culture, and hospitality.
             <br />
@@ -75,13 +192,80 @@ const Accommodations = () => {
             Here you will find something that suits your needs.
           </p>
         </div>
-        
-        {/* Bottom Mask to blend into the next section */}
-        <img src={bottomMask} alt="" className="accomm-intro-mask-bottom" />
+
       </section>
 
-      {/* Registration / Booking Section */}
-      {/* <AccommodationRegistration /> */}
+      {/* Clarks Amer Hotel Banner Section */}
+      <section className="accomm-hotel-banner" style={{ backgroundImage: `url("${clarksBannerImg}")` }}>
+        <div className="accomm-banner-overlay" />
+
+        {/* Top mask overlaying the banner image */}
+        <img src={topMask} alt="" className="accomm-banner-mask-top" />
+      </section>
+
+      {/* Stay Close to the Festival Hotels Section */}
+      <section className="accomm-hotels-section" id="stay-hotels-list">
+        {/* Skyline Silhouette */}
+        <img src={skylineImg} alt="" className="accomm-skyline-silhouette" />
+
+        <div className="accomm-hotels-container">
+          {/* Header Block */}
+          <div className="accomm-hotels-header">
+            <p className="accomm-hotels-year">2026</p>
+
+            <div className="accomm-hotels-title-wrapper">
+              <img src={starburstImg} alt="" className="accomm-starburst-left" />
+              <h2 className="accomm-hotels-title">STAY CLOSE TO THE FESTIVAL</h2>
+              <img src={starburstImg} alt="" className="accomm-starburst-right" />
+            </div>
+
+            <img src={dividerImg} alt="Teal Divider" className="accomm-hotels-divider" />
+
+            <p className="accomm-hotels-subtitle">
+              “We've curated a selection of hotels and guesthouses near the festival venue to make your stay comfortable, peaceful, and convenient.”
+            </p>
+          </div>
+
+          {/* Grid of 15 Hotel Cards */}
+          <div className="accomm-hotels-grid">
+            {hotelData.map((hotel) => (
+              <div key={hotel.id} className="accomm-hotel-card">
+                <div className="accomm-hotel-frame-wrap">
+                  {hotel.image ? (
+                    <img
+                      src={hotel.image}
+                      alt={hotel.name}
+                      className="accomm-hotel-img"
+                      style={{
+                        WebkitMaskImage: `url(${domeMask})`,
+                        maskImage: `url(${domeMask})`
+                      }}
+                    />
+                  ) : (
+                    <div
+                      className="accomm-hotel-img-placeholder"
+                      style={{
+                        WebkitMaskImage: `url(${domeMask})`,
+                        maskImage: `url(${domeMask})`
+                      }}
+                    />
+                  )}
+                  <img src={domeFrame} alt="Dome Frame" className="accomm-hotel-frame" />
+                </div>
+
+                <h3 className="accomm-hotel-name">{hotel.name}</h3>
+
+                <p className="accomm-hotel-distance">
+                  <span className="distance-label">Distance : </span>
+                  <span className="distance-value">{hotel.distance}</span>
+                </p>
+
+                <p className="accomm-hotel-desc">{hotel.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
