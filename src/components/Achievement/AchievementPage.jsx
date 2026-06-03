@@ -1,6 +1,6 @@
 import React from 'react';
 import bgCulture from '../../assets/exp acive/rajasthani-culture-7801463_1920.jpg 1.png';
-import bgAward from '../../assets/exp acive/award page 1 (1).png';
+import bgAward from '../../assets/exp acive/award-2.png';
 import maskGroup from '../../assets/Mask group.png';
 import textureBg from '../../assets/exp page img/image 34 (1).png';
 import statsGroupImg from '../../assets/IMGOF14/Group 111.png';
@@ -36,7 +36,7 @@ export default function AchievementPage() {
         <img src={maskGroup} alt="" className="ach-hero-mask-top" />
         <img src={maskGroup} alt="" className="ach-hero-mask-bottom" />
         <div className="ach-hero-content">
-          <h1 className="ach-hero-title">LIFETIME<br />ACHIEVEMENT AWARD</h1>
+          <h1 className="ach-hero-title">LIFETIME ACHIEVEMENT AWARD</h1>
           <p className="ach-hero-sub">Jaipur’s and Rajasthan’s leading business leaders, cultural leaders and respected community figures.</p>
         </div>
       </section>
