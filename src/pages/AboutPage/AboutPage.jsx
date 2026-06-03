@@ -11,10 +11,11 @@ import frameImg from '../../assets/about us/Vector (21).png';
 
 import turbanMan from '../../assets/about us/raj (1) 8.png';
 import camels from '../../assets/about us/raj (1) 9.png';
+import camels1 from '../../assets/about us/raj (2) 9.png';
 import unityCircleImg from '../../assets/about us/bg (2).png';
 import unityBg from '../../assets/about us/Group 84 (1).png';
 import goldPalaceCutout from '../../assets/about us/raj (1) 2.png';
-import approachBg from '../../assets/about us/Group 108.png';
+import approachDivider from '../../assets/about us/Group (14).png';
 
 import yoga1 from '../../assets/about us/yoga pose.png';
 import yoga2 from '../../assets/about us/yoga pose (1).png';
@@ -27,16 +28,16 @@ const AboutPage = () => {
       {/* Hero Section */}
       <section className="about-hero" style={{ backgroundImage: `url("${bgImage}")` }}>
         <img src={topMask} alt="Top Torn Edge" className="about-mask-top mask-overlay" />
-
+        
         <div className="about-hero-content">
           <h1>ABOUT<br />JAIPUR ONENESS<br />FESTIVAL</h1>
-          <p className="about-hero-date   ">00 January - 00 January<br />2026</p>
-
+          <p className="about-hero-date">00 January - 00 January<br />2026</p>
+          
           {/* Floating Flowers */}
           <img src={flowerIcon} alt="flower" className="about-flower about-flower-1" />
           <img src={flowerIcon} alt="flower" className="about-flower about-flower-2" />
         </div>
-
+        
         <img src={bottomMask} alt="Bottom Torn Edge" className="about-mask-bottom mask-overlay" />
       </section>
 
@@ -44,15 +45,15 @@ const AboutPage = () => {
       <section className="about-intro">
         <div className="about-text-wrapper">
           <p>
-            Jaipur Oneness Festival is a cultural and spiritual gathering celebrating oneness and
-            connection in India. It is a space to reconnect with your own essence, experience
-            wholeness within yourself, and explore life from your true self. When we live
-            authentically, others can see us clearly, and we naturally attract people and
+            Jaipur Oneness Festival is a cultural and spiritual gathering celebrating oneness and 
+            connection in India. It is a space to reconnect with your own essence, experience 
+            wholeness within yourself, and explore life from your true self. When we live 
+            authentically, others can see us clearly, and we naturally attract people and 
             circumstances that resonate with our path.
           </p>
           <img src={flowerIcon} alt="flower" className="about-flower about-flower-3" />
           <p className="about-text-second">
-            The festival brings together people who wish to live, move, and relate from their true
+            The festival brings together people who wish to live, move, and relate from their true 
             selves, sharing a sense of unity,<br />
             harmony, and purpose with others.
           </p>
@@ -64,7 +65,7 @@ const AboutPage = () => {
       <section className="about-vision">
         <img src={topMask} alt="Top Torn Edge" className="about-vision-mask-top mask-overlay" />
         <img src={peacockFeather} alt="Peacock feather" className="peacock-feather-about" />
-
+        
         <div className="vision-content">
           <div className="vision-text">
             <h2>OUR VISION</h2>
@@ -74,7 +75,7 @@ const AboutPage = () => {
           </div>
           <div className="vision-frame-wrapper">
             {/* <div className="vision-frame"> */}
-            {/* <img src={aboutVisionImg} alt="Group discussion" /> */}
+              {/* <img src={aboutVisionImg} alt="Group discussion" /> */}
             {/* </div> */}
             <img src={frameImg} alt="" className="vision-frame-border" />
           </div>
@@ -95,10 +96,10 @@ const AboutPage = () => {
           <h2>LIVING IN ALIGNMENT</h2>
           <img src={dividerIcon} alt="Divider" className="section-divider" />
         </div>
-
+        
         <div className="alignment-content">
           <img src={turbanMan} alt="Man" className="alignment-character-left" />
-
+          
           <div className="alignment-boxes">
             <div className="alignment-box">
               Each of us leads our own lives, often focused on our families or personal goals. At the festival, we explore what it means to live, move, and be in alignment with ourselves, each other, and the larger community.
@@ -119,7 +120,7 @@ const AboutPage = () => {
       <section className="about-unity" style={{ backgroundImage: `url("${unityBg}")` }}>
         <div className="unity-content">
           <div className="unity-image">
-            <img src={unityCircleImg} alt="People at Hawa Mahal" />
+             <img src={unityCircleImg} alt="People at Hawa Mahal" />
           </div>
           <div className="unity-text">
             <h2>CARRIED IN UNITY AND WHOLENESS</h2>
@@ -137,11 +138,11 @@ const AboutPage = () => {
       </section>
 
       {/* Our Approach Section */}
-      <section className="about-approach" style={{ backgroundImage: `url("${approachBg}")` }}>
+      <section className="about-approach">
         <div className="approach-header">
           <span className="approach-year">2026</span>
           <h2>OUR APPROACH</h2>
-          <img src={dividerIcon} alt="Divider" className="section-divider" />
+          <img src={dividerIcon} alt="Divider" className="section-divider approach-section-divider" />
           <p className="approach-intro-desc">
             At Jaipur Oneness Festival, every participant is both seeker and contributor, joining a collective journey toward self-discovery, connection, and oneness.
           </p>
@@ -154,7 +155,6 @@ const AboutPage = () => {
               Guided sessions that support self-exploration, inner alignment, and authentic expression.
             </p>
           </div>
-
           <div className="approach-card card-community">
             <h3>COMMUNITY<br />AND<br />CO-CREATION</h3>
             <p>
@@ -177,8 +177,11 @@ const AboutPage = () => {
           </div>
         </div>
 
+        {/* Landscape hills overlay at bottom */}
+        <img src={approachDivider} alt="" className="approach-landscape" />
+
         {/* Overlapping characters */}
-        <img src={camels} alt="Camel Left" className="approach-camel-left" />
+        <img src={camels1} alt="Camel Left" className="approach-camel-left" />
         <img src={goldPalaceCutout} alt="Palace Right" className="approach-palace-right" />
       </section>
     </div>
