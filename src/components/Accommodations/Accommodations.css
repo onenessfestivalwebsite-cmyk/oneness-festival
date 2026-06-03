@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Roboto+Serif:wght@400;600;700&display=swap');
+
+.accomm-page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+/* ── HERO SECTION ── */
+.accomm-hero-section {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  min-height: 550px;
+  max-height: 1000px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark Warm Overlay */
+.accomm-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(55, 22, 8, 0.55);
+  z-index: 1;
+}
+
+/* Top & Bottom Brush Masks */
+.accomm-mask-top,
+.accomm-mask-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+.accomm-mask-top {
+  top: -2px;
+}
+
+.accomm-mask-bottom {
+  bottom: -2px;
+}
+
+/* Hero Content Wrapper */
+.accomm-hero-content {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  margin-top: -20px;
+  color: #fff;
+}
+
+.accomm-hero-subtitle {
+  font-family: "Roboto Serif", serif;
+  font-size: clamp(18px, 2.5vw, 31px);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+.accomm-hero-year {
+  font-family: "Roboto Serif", serif;
+  font-size: clamp(18px, 2.5vw, 31px);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  margin: 8px 0 35px 0;
+}
+
+.accomm-hero-title {
+  font-family: "Irish Grover", cursive;
+  color: #F8B12F; /* Warm Orange-Gold */
+  font-size: clamp(34px, 5.5vw, 74px);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.15;
+  max-width: 950px;
+  margin: 0 0 45px 0;
+  letter-spacing: 1px;
+  text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+/* Decorative Button Styles */
+.accomm-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accomm-reserve-btn {
+  background-image: url('../../assets/pkg-btn/Group 61.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  color: #1a1a1a;
+  border: none;
+  padding: 18px 48px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;
+  min-width: clamp(280px, 40vw, 420px);
+  min-height: 68px;
+}
+
+.accomm-btn-inner {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accomm-btn-text {
+  font-family: "Irish Grover", cursive;
+  font-size: clamp(14px, 1.8vw, 19px);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Floating Flower Ornaments */
+.accomm-btn-flower-icon {
+  position: absolute;
+  color: #1a1a1a;
+  opacity: 0.85;
+}
+
+.flower-left-bottom {
+  bottom: -15px;
+  left: -28px;
+  transform: scale(0.85);
+}
+
+.flower-right-top {
+  top: -15px;
+  right: -28px;
+  transform: scale(0.85);
+}
+
+/* Button Animations */
+.accomm-reserve-btn:hover {
+  transform: translateY(-3px);
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.2));
+}
+
+.accomm-reserve-btn:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+/* Responsive Rules */
+@media (max-width: 1024px) {
+  .accomm-hero-section {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .accomm-hero-section {
+    height: 65vh;
+    min-height: 480px;
+  }
+  
+  .accomm-hero-year {
+    margin-bottom: 25px;
+  }
+  
+  .accomm-hero-title {
+    margin-bottom: 35px;
+  }
+  
+  .accomm-reserve-btn {
+    padding: 14px 36px;
+    min-width: 250px;
+    min-height: 58px;
+  }
+
+  .flower-left-bottom {
+    bottom: -10px;
+    left: -20px;
+    transform: scale(0.7);
+  }
+  
+  .flower-right-top {
+    top: -10px;
+    right: -20px;
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 480px) {
+  .accomm-hero-section {
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  .accomm-hero-year {
+    margin-bottom: 20px;
+  }
+
+  .accomm-hero-title {
+    margin-bottom: 25px;
+  }
+
+  .accomm-reserve-btn {
+    padding: 12px 28px;
+    min-width: 220px;
+    min-height: 52px;
+  }
+
+  .flower-left-bottom {
+    bottom: -8px;
+    left: -16px;
+    transform: scale(0.6);
+  }
+  
+  .flower-right-top {
+    top: -8px;
+    right: -16px;
+    transform: scale(0.6);
+  }
+}
+
+/* ── INTRO DESCRIPTION SECTION ── */
+.accomm-intro-section {
+  position: relative;
+  background-color: #ffffff;
+  padding: 100px 20px 120px;
+  text-align: center;
+  z-index: 2;
+}
+
+.accomm-intro-container {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accomm-intro-year {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(20px, 2.5vw, 26px);
+  color: #B44634; /* Muted red-brown color from logo/theme */
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0 0 10px 0;
+}
+
+.accomm-intro-title {
+  font-family: "Irish Grover", cursive;
+  font-size: clamp(32px, 5.5vw, 48px);
+  color: #B44634; /* Muted red-brown */
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+
+.accomm-intro-divider {
+  width: clamp(240px, 35vw, 460px);
+  height: auto;
+  margin: 15px auto 35px;
+  display: block;
+}
+
+.accomm-intro-text {
+  font-family: "Roboto Serif", serif;
+  font-size: clamp(14px, 1.8vw, 17px);
+  color: #554440;
+  line-height: 1.85;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+.accomm-intro-mask-bottom {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .accomm-intro-section {
+    padding: 70px 15px 90px;
+  }
+  .accomm-intro-divider {
+    margin: 10px auto 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .accomm-intro-section {
+    padding: 50px 10px 70px;
+  }
+  .accomm-intro-divider {
+    margin: 8px auto 20px;
+  }
+}
+

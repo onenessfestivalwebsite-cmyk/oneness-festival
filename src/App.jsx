@@ -7,6 +7,7 @@ import GetInvolved from './pages/GetInvolved'
 import Contact from './pages/Contact'
 import Tour from './pages/Tour'
 import Accommodation from './pages/Accommodation'
+import Accommodations from './components/Accommodations/Accommodations'
 import ExperiencePage from './components/Experience/ExperiencePage'
 import AchievementPage from './components/Achievement/AchievementPage'
 import ExplorePage from './components/Explore/ExplorePage'
@@ -33,6 +34,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/tour" element={<Tour />} />
           <Route path="/accommodation" element={<Accommodation />} />
+          <Route path="/Accommodations" element={<Accommodations />} />
           <Route path="/experience" element={<ExperiencePage />} />
           <Route path="/achievement" element={<AchievementPage />} />
           <Route path="/explore" element={<ExplorePage />} />
