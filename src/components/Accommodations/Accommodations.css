@@ -247,6 +247,7 @@
   padding: 100px 20px 120px;
   text-align: center;
   z-index: 2;
+  padding-bottom: 50px;
 }
 
 .accomm-intro-container {
@@ -348,35 +349,22 @@
 
 .accomm-banner-mask-top {
   position: absolute;
-  top: 80px;
+  top: -2px;
   left: 0;
   width: 100%;
-  height: auto;
+  height: clamp(50px, 10vw, 120px);
   z-index: 3;
   pointer-events: none;
-  object-fit: cover;
-  transform: translateY(-68%);
+  object-fit: fill;
 }
 
 /* ── HOTELS SECTION ── */
 .accomm-hotels-section {
   position: relative;
   background-color: #71423d;
-  padding: 90px 20px 140px;
+  padding: 90px 20px 30px;
   z-index: 2;
   margin-top: -1px;
-}
-
-.accomm-skyline-silhouette {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: 3;
-  pointer-events: none;
-  object-fit: cover;
-  transform: translateY(-52%);
 }
 
 .accomm-hotels-container {
@@ -519,7 +507,9 @@
   top: 21px;
   width: 100%;
   height: 218px;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: 1;
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
@@ -585,7 +575,7 @@
   }
 
   .accomm-hotels-section {
-    padding: 80px 15px 100px;
+    padding: 80px 15px 20px;
   }
 }
 
@@ -596,12 +586,319 @@
   }
 
   .accomm-hotels-section {
-    padding: 70px 10px 80px;
+    padding: 70px 10px 20px;
   }
 }
 
 @media (max-width: 480px) {
   .accomm-hotels-section {
-    padding: 60px 10px 60px;
+    padding: 60px 10px 20px;
+  }
+}
+
+/* ── BOTTOM ARCHWAY CTA SECTION ── */
+.accomm-arch-section {
+  position: relative;
+  width: 100%;
+  /* Gradient from hotels brown #71423d to soft peach/salmon #ecd6ce to white #ffffff */
+  background: linear-gradient(to bottom, #71423d 0%, #ecd6ce 35%, #ffffff 80%);
+  padding: 0px 20px 160px;
+  /* Extra padding at bottom for silhouette */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: -1px;
+  /* Avoid gap between brown sections */
+}
+
+.accomm-arch-container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.accomm-arch-image-wrap {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.accomm-arch-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
+.accomm-arch-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #CD642D, #71423D);
+  mix-blend-mode: color;
+  -webkit-mask-image: url('../../assets/Accommodationpage/pngwing.com (4) 1.png');
+  mask-image: url('../../assets/Accommodationpage/pngwing.com (4) 1.png');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.accomm-arch-base-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 99.4%;
+  z-index: 2;
+  /* Sits on top of the main arch */
+}
+
+.accomm-arch-base {
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
+.accomm-arch-base-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #7c493e, #71423d);
+  /* Blends perfectly with columns bottom gradient */
+  mix-blend-mode: color;
+  -webkit-mask-image: url('../../assets/Accommodationpage/pngwing.com (4) 2.png');
+  mask-image: url('../../assets/Accommodationpage/pngwing.com (4) 2.png');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.accomm-arch-mask {
+  position: absolute;
+  bottom: -2px;
+  /* Slightly overflow to cover the column edge completely */
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  /* Places it on top of the arch columns and bases */
+  pointer-events: none;
+}
+
+.accomm-arch-content {
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 5;
+}
+
+.accomm-arch-year {
+  font-family: "Irish Grover", cursive;
+  font-size: clamp(14px, 1.8vw, 32px);
+  color: #4c3a80;
+  /* Purple accent matching footer/theme */
+  margin: 0 0 clamp(2px, 0.8vw, 8px) 0;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.accomm-arch-title {
+  font-family: "Irish Grover", cursive;
+  font-size: clamp(12px, 1.8vw, 30px);
+  color: #BD2640;
+  line-height: 1.25;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.accomm-arch-divider {
+  width: clamp(100px, 15vw, 240px);
+  height: auto;
+  margin: clamp(4px, 1vw, 12px) auto clamp(6px, 1.2vw, 16px);
+  display: block;
+}
+
+/* Rounded Purple Button */
+.accomm-arch-btn {
+  background-color: #4c3a80;
+  /* Footer purple */
+  border: none;
+  border-radius: 8px;
+  padding: clamp(6px, 1vw, 12px) clamp(16px, 2.5vw, 36px);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;
+  min-width: clamp(160px, 25vw, 280px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.accomm-arch-btn-inner {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.accomm-arch-btn-text {
+  font-family: "Irish Grover", cursive;
+  font-size: clamp(12px, 1.4vw, 17px);
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Corner Flowers inside Button */
+.arch-flower-left,
+.arch-flower-right {
+  position: absolute;
+  color: #ffffff;
+  opacity: 0.85;
+  width: clamp(12px, 1.8vw, 20px);
+  height: clamp(12px, 1.8vw, 20px);
+}
+
+.arch-flower-left {
+  left: -15px;
+}
+
+.arch-flower-right {
+  right: -15px;
+}
+
+/* Button Animations */
+.accomm-arch-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(76, 58, 128, 0.3);
+  background-color: #5b4699;
+  /* Slightly lighter purple on hover */
+}
+
+.accomm-arch-btn:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+.accomm-hotels-silhouette {
+  position: absolute;
+  top: clamp(20px, 6.25vw, 120px);
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateY(-99%);
+  z-index: 4;
+  pointer-events: none;
+}
+
+/* ── ADDITIONAL RESPONSIVE MEDIA QUERIES ── */
+
+@media (max-width: 1024px) {
+  .accomm-arch-content {
+    width: 50%;
+    top: 72%;
+  }
+}
+
+@media (max-width: 768px) {
+  .accomm-hotel-banner {
+    height: 350px;
+    min-height: 250px;
+  }
+
+  .accomm-hotels-header {
+    margin-bottom: 40px;
+  }
+
+  .accomm-arch-content {
+    width: 55%;
+    top: 71%;
+  }
+
+  .accomm-arch-section {
+    padding: 0px 10px 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .accomm-hotel-banner {
+    height: 220px;
+    min-height: 180px;
+  }
+
+  .accomm-hotels-header {
+    margin-bottom: 30px;
+  }
+
+  .accomm-arch-content {
+    width: 65%;
+    top: 70%;
+  }
+
+  .accomm-arch-section {
+    padding: 0px 5px 75px;
+  }
+
+  .accomm-arch-year {
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+
+  .accomm-arch-title {
+    font-size: 11px;
+    line-height: 1.2;
+  }
+
+  .accomm-arch-divider {
+    width: 80px;
+    margin: 4px auto 6px;
+  }
+
+  .accomm-arch-btn {
+    padding: 6px 12px;
+    min-width: 150px;
+    border-radius: 6px;
+  }
+
+  .accomm-arch-btn-text {
+    font-size: 9px;
+    letter-spacing: 0.8px;
+    margin: 0 4px;
+  }
+
+  .arch-flower-left,
+  .arch-flower-right {
+    width: 10px;
+    height: 10px;
+  }
+
+  .arch-flower-left {
+    left: -8px;
+  }
+
+  .arch-flower-right {
+    right: -8px;
   }
 }

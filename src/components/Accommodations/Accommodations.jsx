@@ -8,14 +8,17 @@ import bottomMask from '../../assets/accommodationpage/Mask group (1).png';
 import dividerImg from '../../assets/accommodationpage/Group 5.png';
 
 // Hotels & Banner Assets
-import clarksBannerImg from '../../assets/accommodationpage/clarks_banner.png';
+import clarksBannerImg from '../../assets/accommodationpage/Upscale Image.png';
 import skylineImg from '../../assets/accommodationpage/design.png';
 import domeFrame from '../../assets/accommodationpage/Vector.png';
 import hotel1Img from '../../assets/accommodationpage/clarks_thumb.png';
 import hotel2Img from '../../assets/accommodationpage/image 26.png';
 import hotel3Img from '../../assets/accommodationpage/image 58.png';
-import domeMask from '../../assets/homepage/Mask group (13).png';
+import domeMask from '../../assets/homepage/Mask group (14).png';
 import starburstImg from '../../assets/accommodationpage/Group 173.png';
+import archImg from '../../assets/accommodationpage/pngwing.com (4) 1.png';
+import archMask from '../../assets/accommodationpage/pngwing.com (4) 3.png';
+import archBaseImg from '../../assets/accommodationpage/pngwing.com (4) 2.png';
 
 const FlowerIcon = ({ className }) => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className={`accomm-btn-flower-icon ${className || ''}`}>
@@ -205,8 +208,8 @@ const Accommodations = () => {
 
       {/* Stay Close to the Festival Hotels Section */}
       <section className="accomm-hotels-section" id="stay-hotels-list">
-        {/* Skyline Silhouette */}
-        <img src={skylineImg} alt="" className="accomm-skyline-silhouette" />
+        {/* Skyline Silhouette overlapping the banner above */}
+        <img src={skylineImg} alt="" className="accomm-hotels-silhouette" />
 
         <div className="accomm-hotels-container">
           {/* Header Block */}
@@ -232,11 +235,10 @@ const Accommodations = () => {
               <div key={hotel.id} className="accomm-hotel-card">
                 <div className="accomm-hotel-frame-wrap">
                   {hotel.image ? (
-                    <img
-                      src={hotel.image}
-                      alt={hotel.name}
+                    <div
                       className="accomm-hotel-img"
                       style={{
+                        backgroundImage: `url(${hotel.image})`,
                         WebkitMaskImage: `url(${domeMask})`,
                         maskImage: `url(${domeMask})`
                       }}
@@ -265,6 +267,39 @@ const Accommodations = () => {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Bottom Archway CTA Section */}
+      <section className="accomm-arch-section">
+        <div className="accomm-arch-container">
+          <div className="accomm-arch-image-wrap">
+            <img src={archImg} alt="Archway" className="accomm-arch-image" />
+            <div className="accomm-arch-image-overlay" />
+          </div>
+          <div className="accomm-arch-base-wrap">
+            <img src={archBaseImg} alt="" className="accomm-arch-base" />
+            <div className="accomm-arch-base-overlay" />
+          </div>
+          <img src={archMask} alt="" className="accomm-arch-mask" />
+          <div className="accomm-arch-content">
+            <p className="accomm-arch-year">2026</p>
+            <h2 className="accomm-arch-title">
+              WANT TO BOOK YOUR STAY<br />
+              AND SECURE<br />
+              YOUR SPOT NEAR THE<br />
+              FESTIVAL?
+            </h2>
+            <img src={dividerImg} alt="Teal Divider" className="accomm-arch-divider" />
+            <button className="accomm-arch-btn" onClick={handleScrollToStays}>
+              <div className="accomm-arch-btn-inner">
+                <FlowerIcon className="arch-flower-left" />
+                <span className="accomm-arch-btn-text">RESERVE YOUR ACCOMMODATION →</span>
+                <FlowerIcon className="arch-flower-right" />
+              </div>
+            </button>
+          </div>
+        </div>
+
       </section>
     </div>
   );
