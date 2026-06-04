@@ -35,13 +35,13 @@ const HomeHero = () => {
           <div className="lotus-graphic-wrapper">
             <img src={centerLotus} alt="Oneness Lotus" className="lotus-img" />
 
-            <div className="lotus-label label-blog">BLOG</div>
-            <div className="lotus-label label-experience">EXPERIENCE</div>
-            <div className="lotus-label label-packages">PACKAGES</div>
-            <div className="lotus-label label-about">ABOUT</div>
-            <div className="lotus-label label-contact">CONTACT</div>
-            <div className="lotus-label label-home-bottom">HOME</div>
-            <div className="lotus-label label-tickets">TICKETS</div>
+            <div className="lotus-label label-blog" ><a href="/blog" style={{ textDecoration: 'none', color: 'white' }}>BLOG</a></div>
+            <div className="lotus-label label-experience"><a href="/experience" style={{ textDecoration: 'none', color: 'white' }}>EXPERIENCE</a></div>
+            <div className="lotus-label label-packages"><a href="/packages" style={{ textDecoration: 'none', color: 'white' }}>PACKAGES</a></div>
+            <div className="lotus-label label-about"><a href="/about" style={{ textDecoration: 'none', color: 'white' }}>ABOUT</a></div>
+            <div className="lotus-label label-contact"><a href="/contact" style={{ textDecoration: 'none', color: 'white' }}>CONTACT</a></div>
+            <div className="lotus-label label-home-bottom"><a href="/" style={{ textDecoration: 'none', color: 'white' }}>HOME</a></div>
+            <div className="lotus-label label-tickets"><a href="/tickets" style={{ textDecoration: 'none', color: 'white' }}>TICKETS</a></div>
           </div>
         </div>
 
