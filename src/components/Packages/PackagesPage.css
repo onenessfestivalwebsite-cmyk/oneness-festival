@@ -27,7 +27,9 @@
 .pkg-hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(55, 22, 8, 0.60);
+     /* background: rgb(6 11 51 / 45%);
+      */
+ background: linear-gradient(135deg, rgb(113 66 61 / 48%) 0%, rgb(74 49 48 / 49%) 50%, rgb(35 31 31 / 60%) 100%);
 }
 
 .pkg-hero-mask {
