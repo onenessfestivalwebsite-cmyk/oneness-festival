@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import bgImage from '../../assets/Introduce_more_variety_202604151201 1.png';
+import bgImage from '../../assets/PACAKGE PAGE.png';
 import maskGroup from '../../assets/Mask group.png';
 import group5 from '../../assets/pkg-btn/Group 5.png';
 import textureBg from '../../assets/pkg-btn/image 34 (2).png';
