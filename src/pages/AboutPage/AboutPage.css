@@ -30,8 +30,13 @@
   overflow: hidden;
 }
 
-.about-mask-top { top: -6px; }
-.about-mask-bottom { bottom: -2px; }
+.about-mask-top {
+  top: -6px;
+}
+
+.about-mask-bottom {
+  bottom: -2px;
+}
 
 /* Hero Content */
 .about-hero-content {
@@ -51,7 +56,7 @@
   line-height: 1.2;
   margin-bottom: 20px;
   text-transform: uppercase;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .about-hero-date {
@@ -59,7 +64,7 @@
   font-family: 'Irish Grover', cursive;
   font-size: 1.5rem;
   font-weight: 600;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   line-height: 1.4;
 }
 
@@ -70,10 +75,27 @@
   opacity: 0.8;
   z-index: 3;
 }
-.about-flower-1 { top: -20px; right: -50px; }
-.about-flower-2 { bottom: -40px; left: -80px; }
-.about-flower-3 { left: -150px; top: 40%; transform: translateY(-50%); }
-.about-flower-4 { right: -150px; bottom: 0; }
+
+.about-flower-1 {
+  top: -20px;
+  right: -50px;
+}
+
+.about-flower-2 {
+  bottom: -40px;
+  left: -80px;
+}
+
+.about-flower-3 {
+  left: -150px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.about-flower-4 {
+  right: -150px;
+  bottom: 0;
+}
 
 /* --- INTRO CONTENT SECTION --- */
 .about-intro {
@@ -94,12 +116,19 @@
   line-height: 1.8;
   position: relative;
 }
-.about-text-wrapper p { margin-bottom: 20px; }
-.about-text-second { margin-top: 40px; }
+
+.about-text-wrapper p {
+  margin-bottom: 20px;
+}
+
+.about-text-second {
+  margin-top: 40px;
+}
 
 /* --- OUR VISION SECTION --- */
 .about-vision {
-  background-color: #5BA6B0; /* Exact teal */
+  background-color: #5BA6B0;
+  /* Exact teal */
   position: relative;
   padding: 120px 5% 150px;
   display: flex;
@@ -108,8 +137,13 @@
   overflow: hidden;
 }
 
-.about-vision-mask-top { top: -2px; }
-.about-vision-mask-bottom { bottom: -2px; }
+.about-vision-mask-top {
+  top: -2px;
+}
+
+.about-vision-mask-bottom {
+  bottom: -2px;
+}
 
 .peacock-feather-about {
   position: absolute;
@@ -159,7 +193,8 @@
   flex-shrink: 0;
   z-index: 2;
   filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.18));
-  margin-right: -60px; /* Overflow slightly to the right like reference */
+  margin-right: -60px;
+  /* Overflow slightly to the right like reference */
 }
 
 .vision-frame {
@@ -215,30 +250,30 @@
 
 /* 1st pose — tall colorful backbend, far left */
 .yoga-1 {
-    left: 5%;
-    bottom: 0px;
-    height: 176px;
+  left: 5%;
+  bottom: 0px;
+  height: 176px;
 }
 
 /* 2nd pose — bending forward, second from left */
 .yoga-2 {
-left: 16%;
-    bottom: -8px;
-    height: 131px;
+  left: 16%;
+  bottom: -8px;
+  height: 131px;
 }
 
 /* 3rd pose — sitting meditation (yellow), center-left */
 .yoga-3 {
-left: 33%;
-    bottom: 27px;
-    height: 131px;
+  left: 33%;
+  bottom: 27px;
+  height: 131px;
 }
 
 /* 4th pose — small lying pose, far right bottom */
 .yoga-4 {
-      right: 16.8%;
-    bottom: 20px;
-    height: 75.1px;
+  right: 16.8%;
+  bottom: 20px;
+  height: 75.1px;
 }
 
 
@@ -254,13 +289,16 @@ left: 33%;
   text-align: center;
   margin-bottom: 40px;
 }
+
 .alignment-header h2 {
   font-family: 'Irish Grover', cursive;
   font-size: clamp(1.8rem, 4vw, 2.2rem);
-  color: #B44634; /* Brownish red */
+  color: #B44634;
+  /* Brownish red */
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
+
 .section-divider {
   height: 15px;
   object-fit: contain;
@@ -277,8 +315,8 @@ left: 33%;
 
 .alignment-character-left {
   position: absolute;
-left: -8%;
-    bottom: -100px;
+  left: -8%;
+  bottom: -100px;
   height: 410px;
   object-fit: contain;
   z-index: 4;
@@ -304,8 +342,8 @@ left: -8%;
 
 .alignment-camel-front {
   position: absolute;
-    bottom: -62px;
-    left: 214px;
+  bottom: -62px;
+  left: 214px;
   width: 280px;
   height: auto;
   object-fit: contain;
@@ -314,9 +352,11 @@ left: -8%;
 .alignment-boxes {
   display: flex;
   gap: 20px;
-  width: 90%; /* To give space for characters on both sides */
+  width: 90%;
+  /* To give space for characters on both sides */
   z-index: 1;
 }
+
 .alignment-box {
   background-color: #3b9270;
   color: white;
@@ -368,8 +408,9 @@ left: -8%;
   display: flex;
   justify-content: center;
 }
+
 .unity-image img {
-      margin-bottom: 30px;
+  margin-bottom: 30px;
   width: 100%;
   max-width: clamp(330px, 33vw, 570px);
   height: auto;
@@ -381,6 +422,7 @@ left: -8%;
   flex: 0 1 570px;
   color: white;
 }
+
 .unity-text h2 {
   font-family: 'Irish Grover', cursive;
   font-size: clamp(1.45rem, 2.25vw, 2.7rem);
@@ -410,7 +452,7 @@ left: -8%;
 
 /* --- OUR APPROACH SECTION --- */
 .about-approach {
-      top: 28px;
+  top: 28px;
   background-color: #FAF6ED;
   min-height: 650px;
   position: relative;
@@ -529,10 +571,21 @@ left: -8%;
 }
 
 /* Card heading colors */
-.card-workshops h3 { color: #A02D42; }
-.card-community h3 { color: #3B4E7D; }
-.card-art h3 { color: #B44634; }
-.card-facilitators h3 { color: #27725B; }
+.card-workshops h3 {
+  color: #A02D42;
+}
+
+.card-community h3 {
+  color: #3B4E7D;
+}
+
+.card-art h3 {
+  color: #B44634;
+}
+
+.card-facilitators h3 {
+  color: #27725B;
+}
 
 /* Landscape hills overlay at the bottom of the section */
 .approach-landscape {
@@ -561,10 +614,10 @@ left: -8%;
 
 /* Palace cutout — top right corner, overlapping into section above */
 .approach-palace-right {
-      position: absolute;
-    right: 0;
-    top: -192px;
-    width: clamp(170px, 19vw, 369px);
+  position: absolute;
+  right: 0;
+  top: -192px;
+  width: clamp(170px, 19vw, 369px);
   height: auto;
   object-fit: contain;
   z-index: 99;
@@ -577,6 +630,7 @@ left: -8%;
   .alignment-boxes {
     width: 65%;
   }
+
   .approach-grid {
     width: 100%;
     padding: 0 4% 145px;
@@ -589,27 +643,34 @@ left: -8%;
     height: 300px;
     left: 0;
   }
+
   .alignment-camels-container {
     width: 240px;
     height: 220px;
     right: 0;
     bottom: 0;
   }
+
   .alignment-camel-back {
     width: 100px;
   }
+
   .alignment-camel-front {
     width: 170px;
   }
+
   .alignment-boxes {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
-  .vision-content, .unity-content {
+
+  .vision-content,
+  .unity-content {
     flex-direction: column;
     text-align: center;
   }
+
   .vision-frame-wrapper {
     width: 90%;
     max-width: 550px;
@@ -620,15 +681,18 @@ left: -8%;
   /* Unity responsive */
   .about-unity {
     background-image: none;
-    background-color: #C02A3D; /* Crimson Red for mobile */
+    background-color: #C02A3D;
+    /* Crimson Red for mobile */
     height: auto;
     min-height: auto;
     padding: 40px 5% 60px;
   }
+
   .unity-image {
     margin-top: -60px;
     z-index: 5;
   }
+
   .unity-image img {
     max-width: 440px;
     width: 90%;
@@ -642,6 +706,7 @@ left: -8%;
     height: auto;
     padding: 80px 5% 0;
   }
+
   .approach-grid {
     position: relative;
     top: 0;
@@ -650,6 +715,7 @@ left: -8%;
     gap: 30px;
     padding: 0 0 160px;
   }
+
   .approach-card {
     width: 90vw;
     max-width: 405px;
@@ -661,9 +727,10 @@ left: -8%;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: none;
-    margin: 0; /* reset negative margins on mobile */
+    margin: 0;
+    /* reset negative margins on mobile */
   }
-  
+
   .approach-camel-left {
     position: relative;
     top: 0;
@@ -672,6 +739,7 @@ left: -8%;
     display: block;
     width: 120px;
   }
+
   .approach-palace-right {
     position: relative;
     top: 0;
@@ -689,33 +757,60 @@ left: -8%;
     flex-direction: column;
     align-items: center;
   }
-  .about-hero-content h1 { font-size: 2.2rem; }
-  .about-hero-date { font-size: 1.2rem; }
-  
-  .about-flower-1 { right: -20px; }
-  .about-flower-2 { left: -20px; }
-  .about-flower-3 { left: -20px; top: 10%; }
-  .about-flower-4 { right: -20px; bottom: 10%; }
 
-  .about-text-wrapper { font-size: 1rem; padding: 0 15px; }
+  .about-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-hero-date {
+    font-size: 1.2rem;
+  }
+
+  .about-flower-1 {
+    right: -20px;
+  }
+
+  .about-flower-2 {
+    left: -20px;
+  }
+
+  .about-flower-3 {
+    left: -20px;
+    top: 10%;
+  }
+
+  .about-flower-4 {
+    right: -20px;
+    bottom: 10%;
+  }
+
+  .about-text-wrapper {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
   .about-intro {
     padding: 50px 15px;
   }
-  
-  .yoga-poses { display: none; }
-  
+
+  .yoga-poses {
+    display: none;
+  }
+
   .alignment-boxes {
     flex-direction: column;
     width: 100%;
     margin-top: 20px;
     gap: 15px;
   }
+
   .alignment-box {
     padding: 24px 20px 24px 75px;
     text-align: left;
     font-size: 0.9rem;
     line-height: 1.45;
   }
+
   .alignment-character-left {
     position: absolute;
     left: -20px;
@@ -725,6 +820,7 @@ left: -8%;
     z-index: 4;
     display: block;
   }
+
   .alignment-camels-container {
     position: relative;
     width: 260px;
@@ -734,28 +830,32 @@ left: -8%;
     bottom: 0;
     right: 0;
   }
+
   .alignment-camel-back {
     width: 110px;
   }
+
   .alignment-camel-front {
     width: 190px;
   }
-  
+
   .vision-frame-wrapper {
     width: 95%;
     max-width: 450px;
     height: auto;
     margin-right: 0;
   }
-  
+
   .unity-image {
     margin-top: -50px;
   }
+
   .unity-image img {
     max-width: 350px;
     width: 90%;
     margin-bottom: 15px;
   }
+
   .approach-header h2 {
     font-size: 2rem;
   }
@@ -776,6 +876,7 @@ left: -8%;
     gap: 30px;
     padding: 0 4% 100px;
   }
+
   .approach-card {
     width: 100%;
     max-width: 320px;
