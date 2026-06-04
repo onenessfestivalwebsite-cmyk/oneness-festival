@@ -7,7 +7,7 @@
   padding: 80px 0 0 0;
   background-color: #ffffff;
   overflow: visible;
-  overflow-x: clip;
+  overflow-x: hidden;
   font-family: 'Georgia', serif;
 }
 

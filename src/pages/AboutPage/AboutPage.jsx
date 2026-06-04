@@ -23,6 +23,30 @@ import yoga3 from '../../assets/about us/yoga pose (2).png';
 import yoga4 from '../../assets/about us/yoga pose (3).png';
 
 const AboutPage = () => {
+  React.useEffect(() => {
+    // Hide scrollbar on mount
+    document.documentElement.style.scrollbarWidth = 'none'; // Firefox
+    document.body.style.msOverflowStyle = 'none'; // IE/Edge
+    
+    // Add custom style to hide webkit scrollbar
+    const style = document.createElement('style');
+    style.id = 'hide-scrollbar-style';
+    style.innerHTML = `
+      ::-webkit-scrollbar {
+        display: none !important;
+      }
+    `;
+    document.head.appendChild(style);
+
+    return () => {
+      // Restore on unmount
+      document.documentElement.style.scrollbarWidth = '';
+      document.body.style.msOverflowStyle = '';
+      const styleElement = document.getElementById('hide-scrollbar-style');
+      if (styleElement) styleElement.remove();
+    };
+  }, []);
+
   return (
     <div className="about-page">
       {/* Hero Section */}
@@ -109,10 +133,6 @@ const AboutPage = () => {
             </div>
           </div>
 
-          <div className="alignment-camels-container">
-            <img src={camels} alt="Camel Back" className="alignment-camel-back" />
-            <img src={camels} alt="Camel Front" className="alignment-camel-front" />
-          </div>
         </div>
       </section>
 
@@ -181,7 +201,6 @@ const AboutPage = () => {
         <img src={approachDivider} alt="" className="approach-landscape" />
 
         {/* Overlapping characters */}
-        <img src={camels1} alt="Camel Left" className="approach-camel-left" />
         <img src={goldPalaceCutout} alt="Palace Right" className="approach-palace-right" />
       </section>
     </div>

@@ -6,7 +6,7 @@
   background-color: #FAF4E5;
   /* Warm cream/ivory background matching the mockup */
   padding: 50px 20px 0px;
-  overflow: visible;
+  overflow: hidden;
   box-sizing: border-box;
   margin-top: -60px;
 }
@@ -240,7 +240,7 @@
   .dj-palace-img {
     width: 125% !important;
     max-width: 122% !important;
-    margin-left: 219px !important;
+    margin-left: auto !important;
     margin-right: auto !important;
     display: block;
     transform: scale(1.35);
