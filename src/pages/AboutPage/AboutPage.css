@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   background-color: #71423D;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* --- COMMON MASK OVERLAYS --- */
@@ -45,7 +45,7 @@
 }
 
 .about-hero-content h1 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Irish Grover', cursive;
   font-size: clamp(2.2rem, 6vw, 3.5rem);
   font-weight: 700;
   line-height: 1.2;
@@ -56,7 +56,7 @@
 
 .about-hero-date {
   color: #f7a938;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Irish Grover', cursive;
   font-size: 1.5rem;
   font-weight: 600;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
