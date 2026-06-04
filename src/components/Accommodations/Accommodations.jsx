@@ -2,23 +2,23 @@ import React from 'react';
 import './Accommodations.css';
 
 // Assets
-import bgImage from '../../assets/accommodationpage/image 48.png';
-import topMask from '../../assets/accommodationpage/Mask group.png';
-import bottomMask from '../../assets/accommodationpage/Mask group (1).png';
-import dividerImg from '../../assets/accommodationpage/Group 5.png';
+import bgImage from '../../assets/Accommodationpage/image 48.png';
+import topMask from '../../assets/Accommodationpage/Mask group.png';
+import bottomMask from '../../assets/Accommodationpage/Mask group (1).png';
+import dividerImg from '../../assets/Accommodationpage/Group 5.png';
 
 // Hotels & Banner Assets
-import clarksBannerImg from '../../assets/accommodationpage/Upscale Image.png';
-import skylineImg from '../../assets/accommodationpage/design.png';
-import domeFrame from '../../assets/accommodationpage/Vector.png';
-import hotel1Img from '../../assets/accommodationpage/img10.png';
-import hotel2Img from '../../assets/accommodationpage/img11.png';
-import hotel3Img from '../../assets/accommodationpage/img12.png';
+import clarksBannerImg from '../../assets/Accommodationpage/Upscale Image.png';
+import skylineImg from '../../assets/Accommodationpage/design.png';
+import domeFrame from '../../assets/Accommodationpage/Vector.png';
+import hotel1Img from '../../assets/Accommodationpage/img10.png';
+import hotel2Img from '../../assets/Accommodationpage/img11.png';
+import hotel3Img from '../../assets/Accommodationpage/img12.png';
 import domeMask from '../../assets/homepage/Mask group (14).png';
-import starburstImg from '../../assets/accommodationpage/Group 173.png';
-import archImg from '../../assets/accommodationpage/pngwing.com (4) 1.png';
-import archMask from '../../assets/accommodationpage/pngwing.com (4) 3.png';
-import archBaseImg from '../../assets/accommodationpage/pngwing.com (4) 2.png';
+import starburstImg from '../../assets/Accommodationpage/Group 173.png';
+import archImg from '../../assets/Accommodationpage/pngwing.com (4) 1.png';
+import archMask from '../../assets/Accommodationpage/pngwing.com (4) 3.png';
+import archBaseImg from '../../assets/Accommodationpage/pngwing.com (4) 2.png';
 
 const FlowerIcon = ({ className }) => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className={`accomm-btn-flower-icon ${className || ''}`}>
