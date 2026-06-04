@@ -1,6 +1,7 @@
 import React from 'react';
 import './ContactSection.css';
 import dividerImg from '../../assets/Group 5.png';
+import mandalaImg from '../../assets/Group 54.png';
 
 const ContactSection = () => {
   return (
@@ -55,6 +56,12 @@ const ContactSection = () => {
           message us about how you would like to get involved with us right now.
         </p>
       </div>
+
+      {/* Decorative Mandalas */}
+      <img src={mandalaImg} alt="" className="contact-mandala mandala-2" />
+      <img src={mandalaImg} alt="" className="contact-mandala mandala-3" />
+      <img src={mandalaImg} alt="" className="contact-mandala mandala-4" />
+      <img src={mandalaImg} alt="" className="contact-mandala mandala-5" />
     </section>
   );
 };

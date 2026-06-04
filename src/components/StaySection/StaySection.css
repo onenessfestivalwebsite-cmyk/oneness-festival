@@ -7,7 +7,7 @@
   /* Pulls the entire background image upward */
   min-height: 1680px;
   /* Increased min-height to give background massive height */
-  padding: 290px 20px 180px;
+  padding: 1px 20px 400px;
   /* Increased bottom padding to stretch background height further */
   overflow: hidden;
   box-sizing: border-box;
@@ -417,9 +417,11 @@
   }
 
   .stay-bottom-note {
-    color: #1a1622 !important; /* Deep dark charcoal for maximum contrast on the light camel background */
+    color: #1a1622 !important;
+    /* Deep dark charcoal for maximum contrast on the light camel background */
     font-weight: 700;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* Soft white outline shadow for 100% legibility */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    /* Soft white outline shadow for 100% legibility */
     max-width: 600px;
     margin: 15px auto 0;
   }

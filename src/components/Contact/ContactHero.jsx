@@ -6,6 +6,7 @@ import team4 from '../../assets/team 4.png';
 import team3 from '../../assets/team 3.png';
 import group237 from '../../assets/Group 237.png';
 import group238 from '../../assets/Group 238.png';
+import mandalaImg from '../../assets/Group 54.png';
 
 const ContactHero = () => {
   return (
@@ -14,6 +15,9 @@ const ContactHero = () => {
         {/* Top Ornament */}
         <div className="hero-ornament hero-top-ornament" style={{ backgroundImage: `url(${ornamentImg})` }} />
         
+        {/* Center Mandala Ornament */}
+        <img src={mandalaImg} alt="" className="hero-center-mandala" />
+
         {/* Left Team with Brush Shape on TOP */}
         <div className="side-team-container left-edge">
           <img src={team3} className="team-member-img left-team-img" alt="Team Left" />
