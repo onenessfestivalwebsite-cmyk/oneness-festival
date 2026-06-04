@@ -8,8 +8,10 @@ const Footer = () => {
       {/* Background image added via CSS class */}
       <div className="footer-top-bg"></div>
       
+        <div className="footer-krishna-bg">
+          {/* <img src="krish" alt="krishna" /> */}
+        </div>
       <div className="footer-container">
-        <div className="footer-krishna-bg"></div>
         {/* Main Columns */}
         <div className="footer-main">
           {/* Column 1: Contact */}
