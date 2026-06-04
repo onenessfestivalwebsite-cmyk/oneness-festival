@@ -159,14 +159,37 @@
 
 @media (max-width: 480px) {
   .side-team-container {
-    display: none;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    bottom: -60px;
+  }
+.hero-left-brush {
+      bottom: -15%;
+      left: 10px;
+}
+.hero-right-brush{
+      bottom: -50px;
+      left: -20px;
+}
+  .left-edge {
+    left: -35px;
+  }
+
+  .right-edge {
+    right: -35px;
   }
 
   .contact-hero-bg {
-    height: 180px;
+    height: 220px;
   }
 
   .hero-ornament {
-    height: 35px;
+    height: 45px;
+  }
+
+  .team-member-img {
+    width: 95%;
+    margin-bottom: 12px;
   }
 }

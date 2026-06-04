@@ -6,8 +6,7 @@ import img2 from '../../assets/teampage/Mask group (10).png';
 import img3 from '../../assets/teampage/Mask group (11).png';
 import img4 from '../../assets/teampage/Mask group (12).png';
 
-import camelLeft from '../../assets/teampage/raj (1) 1.png';
-import camelRight from '../../assets/teampage/raj (1) 10.png';
+
 import frameImg from '../../assets/teampage/Group (10).png';
 
 const profiles = [
@@ -46,11 +45,7 @@ const TeamProfiles = () => {
     <section className="team-profiles-section">
       <div className="team-profiles-container">
         
-        {/* Left Camel */}
-        <img src={camelRight} alt="Camel Decoration" className="camel-left" />
 
-        {/* Right Camel */}
-        <img src={camelLeft} alt="Camel Decoration" className="camel-right" />
 
         {profiles.map((profile, index) => (
           <div 

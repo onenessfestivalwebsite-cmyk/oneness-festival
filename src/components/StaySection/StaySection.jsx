@@ -94,8 +94,8 @@ const StaySection = () => {
         {/* Hotels Grid / Carousel */}
         <div className="stay-hotels-grid">
           {/* Left Arrow Button */}
-          <button 
-            className="stay-carousel-btn prev-btn" 
+          <button
+            className="stay-carousel-btn prev-btn"
             onClick={handlePrev}
             aria-label="Previous Hotel"
           >
@@ -108,8 +108,8 @@ const StaySection = () => {
             const isVisible = isFirst || isSecond;
 
             return (
-              <div 
-                key={hotel.id} 
+              <div
+                key={hotel.id}
                 className={`stay-hotel-card ${isVisible ? 'mobile-visible' : ''} ${isFirst ? 'mobile-first' : ''} ${isSecond ? 'mobile-second' : ''}`}
               >
                 <div className="stay-hotel-frame-wrap">
@@ -139,8 +139,8 @@ const StaySection = () => {
           })}
 
           {/* Right Arrow Button */}
-          <button 
-            className="stay-carousel-btn next-btn" 
+          <button
+            className="stay-carousel-btn next-btn"
             onClick={handleNext}
             aria-label="Next Hotel"
           >

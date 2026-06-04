@@ -49,9 +49,9 @@ const BazaarPage = () => {
         <div className="dividing">
           <img src={bottomDivider} alt="divider" />
         </div>
-          <div className="bazaar-flower-icon-top-left">
-            <img src={flowerIcon} alt="flower" className="bazaar-flower-icon-top-leftt" />
-          </div>
+        <div className="bazaar-flower-icon-top-left">
+          <img src={flowerIcon} alt="flower" className="bazaar-flower-icon-top-leftt" />
+        </div>
 
         <div className="teal-section-container">
           <div className="teal-section-text">

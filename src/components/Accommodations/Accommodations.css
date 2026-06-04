@@ -28,7 +28,7 @@
 .accomm-hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(55, 22, 8, 0.55);
+  background: transparent;
   z-index: 1;
 }
 
@@ -581,18 +581,49 @@
 
 @media (max-width: 768px) {
   .accomm-hotels-grid {
-    grid-template-columns: 1fr;
-    gap: 45px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    scroll-padding: 0 20px;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+  }
+
+  .accomm-hotels-grid::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome/Safari */
+  }
+
+  .accomm-hotel-card {
+    flex: 0 0 280px;
+    max-width: 280px;
+    scroll-snap-align: center;
+    margin: 0;
   }
 
   .accomm-hotels-section {
-    padding: 70px 10px 20px;
+    padding: 70px 0 20px;
+    overflow-x: hidden;
+  }
+
+  .accomm-hotels-header {
+    padding: 0 20px;
+    margin-bottom: 40px;
   }
 }
 
 @media (max-width: 480px) {
   .accomm-hotels-section {
-    padding: 60px 10px 20px;
+    padding: 60px 0 20px;
+  }
+
+  .accomm-hotels-header {
+    margin-bottom: 30px;
   }
 }
 
