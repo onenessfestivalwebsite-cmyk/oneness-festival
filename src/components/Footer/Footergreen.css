@@ -1,5 +1,5 @@
 .site-footer {
-  background-color: #4c3a80;
+  background-color: #002319;
   /* Matched exactly to the bottom pixel of group 94.png */
   color: #d1d5db;
   z-index: 99;
@@ -23,6 +23,7 @@
   background-position: bottom center;
   background-repeat: no-repeat;
   z-index: 10;
+   filter: brightness(0) saturate(100%) invert(11%) sepia(35%) saturate(1163%) hue-rotate(118deg) brightness(95%) contrast(104%);
   pointer-events: none;
 }
 
@@ -267,7 +268,7 @@
 }
 
 .footer-bottom-strip {
-  background-color: #3b2b5a;
+  background-color: #002a16;
   /* darker purple for bottom strip */
   padding: 15px 0;
   width: 100%;

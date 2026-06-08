@@ -1,7 +1,8 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import Footergreen from './components/Footer/Footergreen'
 import Home from './pages/Home'
 import AboutPage from './pages/AboutPage/AboutPage'
 import GetInvolved from './pages/GetInvolved'
@@ -26,6 +27,9 @@ import BazaarPage from './pages/BazaarPage/BazaarPage'
 import GalleryPage from './pages/GalleryPage/GalleryPage'
 
 function App() {
+  const location = useLocation()
+  const isAchievement = location.pathname === '/achievement'
+
   return (
     <>
       <Header />
@@ -59,7 +63,7 @@ function App() {
           <Route path="*" element={<UnderDevelopment />} />
         </Routes>
       </main>
-      <Footer />
+      {isAchievement ? <Footergreen /> : <Footer />}
     </>
   )
 }
