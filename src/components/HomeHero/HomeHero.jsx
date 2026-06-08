@@ -3,7 +3,7 @@ import './HomeHero.css';
 
 import bgImage from '../../assets/homepage/Backgtound.png';
 import logoImage from '../../assets/Logo.png';
-import centerLotus from '../../assets/homepage/Group (13).png';
+import centerLotus from '../../assets/homepagelogoo.png';
 import bottomDivider from '../../assets/homepage/Mask group (5).png';
 import ornamentImg from '../../assets/homepage/Group 5 (5).png';
 import tag1 from '../../assets/homepage/tag (1).png';
