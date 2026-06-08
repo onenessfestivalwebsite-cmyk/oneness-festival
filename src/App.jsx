@@ -1,4 +1,5 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import './App.css'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
@@ -64,6 +65,7 @@ function App() {
         </Routes>
       </main>
       {isAchievement ? <Footergreen /> : <Footer />}
+      <Analytics />
     </>
   )
 }

@@ -77,7 +77,7 @@ export default function ExperiencePage() {
           </h1>
           <div className="exp-btn-container" style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center' }}>
             {/* <Link to="/explore" className="exp-btn-white"> */}
-            <Link to="#" className="exp-btn-white">
+            <Link to="/explore" className="exp-btn-white">
 
               EXPLORE PROGRAM
             </Link>
