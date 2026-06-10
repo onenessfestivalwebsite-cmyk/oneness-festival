@@ -1,4 +1,4 @@
-.site-footer {
+.green-site-footer {
   background-color: #002319;
   /* Matched exactly to the bottom pixel of group 94.png */
   color: #d1d5db;
@@ -9,7 +9,7 @@
 }
 
 /* Background image user mentioned (group 94.png) */
-.footer-top-bg {
+.green-footer-top-bg {
   position: absolute;
   bottom: calc(100% - 3px);
   /* Places it exactly ON TOP of the footer, overlapping slightly to prevent gaps */
@@ -27,7 +27,7 @@
   pointer-events: none;
 }
 
-.footer-container {
+.green-footer-container {
   width: min(1300px, 95%);
   margin: 25px auto;
   padding: 0px 0 20px;
@@ -35,7 +35,7 @@
   z-index: 1;
 }
 
-.footer-krishna-bg {
+.green-footer-krishna-bg {
   position: absolute;
   top: 50%;
   left: 0;
@@ -52,7 +52,7 @@
   pointer-events: none;
 }
 
-.footer-main {
+.green-footer-main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -60,98 +60,98 @@
   margin-bottom: 40px;
 }
 
-.footer-col {
+.green-footer-col {
   flex: 1;
   min-width: 150px;
 }
 
-.contact-col {
+.green-contact-col {
   flex: 1.5;
   min-width: 250px;
 }
 
-.right-section {
+.green-right-section {
   flex: 3;
   display: flex;
   flex-direction: column;
   min-width: 350px;
 }
 
-.right-top-links {
+.green-right-top-links {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-.sub-col {
+.green-sub-col {
   flex: 1;
 }
 
-.site-footer h3 {
+.green-site-footer h3 {
   color: #ffffff;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-.site-footer p {
+.green-site-footer p {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 10px;
 }
 
-.bold-text {
+.green-bold-text {
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 5px;
 }
 
-.contact-details a {
+.green-contact-details a {
   word-break: break-all;
   overflow-wrap: break-word;
 }
 
-.contact-details p {
+.green-contact-details p {
   margin-bottom: 15px;
 }
 
-.contact-details strong {
+.green-contact-details strong {
   color: #ffffff;
 }
 
-.site-footer ul {
+.green-site-footer ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.site-footer ul li {
+.green-site-footer ul li {
   margin-bottom: 12px;
 }
 
-.site-footer a {
+.green-site-footer a {
   color: #d1d5db;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s;
 }
 
-.site-footer a:hover {
+.green-site-footer a:hover {
   color: #ffffff;
 }
 
-.newsletter-section {
+.green-newsletter-section {
   margin-top: 30px;
 }
 
-.newsletter-form {
+.green-newsletter-form {
   display: flex;
   margin-bottom: 15px;
   border-radius: 4px;
   overflow: hidden;
 }
 
-.newsletter-form input {
+.green-newsletter-form input {
   flex: 1;
   padding: 12px 15px;
   border: 1px solid #6b5c8c;
@@ -160,11 +160,11 @@
   outline: none;
 }
 
-.newsletter-form input::placeholder {
+.green-newsletter-form input::placeholder {
   color: #b0a6c2;
 }
 
-.newsletter-form button {
+.green-newsletter-form button {
   padding: 0 30px;
   background-color: #fca311;
   color: #000000;
@@ -174,23 +174,23 @@
   transition: background-color 0.3s;
 }
 
-.newsletter-form button:hover {
+.green-newsletter-form button:hover {
   background-color: #e5930f;
 }
 
-.newsletter-note {
+.green-newsletter-note {
   font-size: 13px !important;
   color: #b0a6c2;
   margin-bottom: 5px !important;
 }
 
-.footer-divider {
+.green-footer-divider {
   height: 1px;
   background-color: #6b5c8c;
   margin: 30px 0;
 }
 
-.footer-middle {
+.green-footer-middle {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -198,35 +198,35 @@
   gap: 30px;
 }
 
-.footer-policies {
+.green-footer-policies {
   margin-top: 40px;
   display: flex;
   gap: 20px;
   /* flex: 1; */
 }
 
-.footer-social {
+.green-footer-social {
   flex: 2;
   text-align: center;
 }
 
-.footer-social h3 {
+.green-footer-social h3 {
   margin-bottom: 10px;
 }
 
-.footer-social p {
+.green-footer-social p {
   color: #b0a6c2;
   font-size: 13px;
   margin-bottom: 15px;
 }
 
-.social-icons {
+.green-social-icons {
   display: flex;
   justify-content: center;
   gap: 15px;
 }
 
-.social-icons .icon {
+.green-social-icons .green-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,17 +241,17 @@
   transition: transform 0.3s;
 }
 
-.social-icons .icon:hover {
+.green-social-icons .green-icon:hover {
   transform: scale(1.1);
 }
 
-.footer-search {
+.green-footer-search {
   flex: 1;
   display: flex;
   justify-content: flex-end;
 }
 
-.footer-search input {
+.green-footer-search input {
   margin-top: 30px;
   width: 100%;
   max-width: 250px;
@@ -263,18 +263,18 @@
   outline: none;
 }
 
-.footer-search input::placeholder {
+.green-footer-search input::placeholder {
   color: #b0a6c2;
 }
 
-.footer-bottom-strip {
+.green-footer-bottom-strip {
   background-color: #002a16;
-  /* darker purple for bottom strip */
+  /* darker green for bottom strip */
   padding: 15px 0;
   width: 100%;
 }
 
-.footer-bottom-content {
+.green-footer-bottom-content {
 width: 100%;
     padding: 0 20px;
     display: flex;
@@ -285,46 +285,46 @@ width: 100%;
     gap: 480px;
 }
 
-.footer-bottom-content p {
+.green-footer-bottom-content p {
   font-size: 13px;
   color: #9ca3af;
   margin: 0;
 }
 
 @media (max-width: 1024px) {
-  .footer-main {
+  .green-footer-main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 
-  .contact-col {
+  .green-contact-col {
     grid-column: span 2;
     /* Contact takes full width */
     margin-bottom: 20px;
   }
 
-  .right-section {
+  .green-right-section {
     grid-column: span 2;
     /* Newsletter section full width */
   }
 
-  .footer-middle {
+  .green-footer-middle {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .footer-search {
+  .green-footer-search {
     justify-content: center;
     width: 100%;
   }
 
-  .footer-search input {
+  .green-footer-search input {
     max-width: 100%;
   }
 
-  .footer-bottom-content {
+  .green-footer-bottom-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -333,12 +333,12 @@ width: 100%;
 
 /* Mobile Specific Fixes */
 @media (max-width: 768px) {
-  .footer-top-bg {
+  .green-footer-top-bg {
     height: 60px;
     /* Scaled down significantly for mobile */
   }
 
-  .footer-krishna-bg {
+  .green-footer-krishna-bg {
     width: 250px;
     height: 250px;
     top: auto;
@@ -346,7 +346,7 @@ width: 100%;
     opacity: 0.15;
   }
 
-  .right-top-links {
+  .green-right-top-links {
     display: flex;
     flex-direction: row;
     /* Keep them side by side */
@@ -355,21 +355,21 @@ width: 100%;
     gap: 15px;
   }
 
-  .sub-col {
+  .green-sub-col {
     min-width: 30%;
     /* Ensure they fit side by side */
   }
 
-  .newsletter-form {
+  .green-newsletter-form {
     flex-direction: column;
     gap: 10px;
   }
 
-  .newsletter-form input {
+  .green-newsletter-form input {
     border-radius: 4px;
   }
 
-  .newsletter-form button {
+  .green-newsletter-form button {
     padding: 12px;
     width: 100%;
     border-radius: 4px;

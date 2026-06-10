@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import bgImage from '../../assets/exp explore page/image 36.png';
 import maskTop from '../../assets/exp explore page/Mask group (6).png';
 import maskBottom from '../../assets/exp explore page/Mask group (7).png';
-import dividerImg from '../../assets/exp page img/dvider_20 5.png';
+import dividerImg from '../../assets/Group 5.png';
 
 // Maps
 import mapPage1 from '../../assets/exp explore page/Group (16).png'; // Yellow theme map
@@ -74,8 +74,12 @@ export default function ExplorePage() {
       {/* ── SCHEDULE SECTION ── */}
       <section className="schedule-section">
         {/* Background Decorative Mandalas */}
-        <div className="schedule-mandala mandala-left"></div>
-        <div className="schedule-mandala mandala-right"></div>
+        <div className="schedule-mandala mandala-left">
+          <div className="mandala-circle"></div>
+        </div>
+        <div className="schedule-mandala mandala-right">
+          <div className="mandala-circle"></div>
+        </div>
 
         <div className="schedule-content">
           <div className="schedule-header-block">
@@ -273,8 +277,8 @@ export default function ExplorePage() {
 
       {/* ── FRIDAY SECTION (DAY 2) ── */}
       <section className="day-section friday-section-bg" ref={fridayRef}>
-        <div className="schedule-mandala mandala-left"></div>
-        <div className="schedule-mandala mandala-right"></div>
+        <div className="schedule-mandala-blue mandala-left"></div>
+        <div className="schedule-mandala-blue mandala-right"></div>
         <div className="section-container">
           {/* Day Navigation Tabs */}
           <div className="day-tabs-container">
@@ -400,8 +404,8 @@ export default function ExplorePage() {
 
       {/* ── SATURDAY SECTION (DAY 3) ── */}
       <section className="day-section saturday-section-bg" ref={saturdayRef}>
-        <div className="schedule-mandala mandala-left"></div>
-        <div className="schedule-mandala mandala-right"></div>
+        <div className="schedule-mandala-blue mandala-left"></div>
+        <div className="schedule-mandala-blue mandala-right"></div>
         <div className="section-container">
           {/* Day Navigation Tabs */}
           <div className="day-tabs-container">
